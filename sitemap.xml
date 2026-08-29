@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Ana Sayfa -->
     <url>
-        <loc>https://ankara-kapinda-servis.vercel.app/</loc>
+        <loc>https://www.ankarakapindaservis.com/</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -10,7 +10,7 @@
 
     <!-- Keçiören Servis -->
     <url>
-        <loc>https://ankara-kapinda-servis.vercel.app/kecioren</loc>
+        <loc>https://www.ankarakapindaservis.com/kecioren</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -18,7 +18,7 @@
 
     <!-- Çankaya Servis -->
     <url>
-        <loc>https://ankara-kapinda-servis.vercel.app/cankaya</loc>
+        <loc>https://www.ankarakapindaservis.com/cankaya</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -26,7 +26,7 @@
 
     <!-- Yenimahalle Servis -->
     <url>
-        <loc>https://ankara-kapinda-servis.vercel.app/yenimahalle</loc>
+        <loc>https://www.ankarakapindaservis.com/yenimahalle</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -34,7 +34,7 @@
 
     <!-- Mamak Servis -->
     <url>
-        <loc>https://ankara-kapinda-servis.vercel.app/mamak</loc>
+        <loc>https://www.ankarakapindaservis.com/mamak</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -42,7 +42,7 @@
 
     <!-- Altındağ Servis -->
     <url>
-        <loc>https://ankara-kapinda-servis.vercel.app/altindag</loc>
+        <loc>https://www.ankarakapindaservis.com/altindag</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -50,7 +50,7 @@
 
     <!-- Etimesgut Servis -->
     <url>
-        <loc>https://ankara-kapinda-servis.vercel.app/etimesgut</loc>
+        <loc>https://www.ankarakapindaservis.com/etimesgut</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -58,7 +58,7 @@
 
     <!-- Pursaklar Servis -->
     <url>
-        <loc>https://ankara-kapinda-servis.vercel.app/pursaklar</loc>
+        <loc>https://www.ankarakapindaservis.com/pursaklar</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -66,7 +66,7 @@
 
     <!-- Sincan Servis -->
     <url>
-        <loc>https://ankara-kapinda-servis.vercel.app/sincan</loc>
+        <loc>https://www.ankarakapindaservis.com/sincan</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -74,7 +74,7 @@
 
     <!-- Gölbaşı Servis -->
     <url>
-        <loc>https://ankara-kapinda-servis.vercel.app/golbasi</loc>
+        <loc>https://www.ankarakapindaservis.com/golbasi</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
