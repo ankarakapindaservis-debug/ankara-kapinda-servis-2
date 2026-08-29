@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Ana Sayfa -->
+    <url>
+        <loc>https://ankara-kapinda-servis.vercel.app/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Keçiören Servis -->
+    <url>
+        <loc>https://ankara-kapinda-servis.vercel.app/kecioren</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Çankaya Servis -->
+    <url>
+        <loc>https://ankara-kapinda-servis.vercel.app/cankaya</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Yenimahalle Servis -->
+    <url>
+        <loc>https://ankara-kapinda-servis.vercel.app/yenimahalle</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Mamak Servis -->
+    <url>
+        <loc>https://ankara-kapinda-servis.vercel.app/mamak</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Altındağ Servis -->
+    <url>
+        <loc>https://ankara-kapinda-servis.vercel.app/altindag</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Etimesgut Servis -->
+    <url>
+        <loc>https://ankara-kapinda-servis.vercel.app/etimesgut</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Pursaklar Servis -->
+    <url>
+        <loc>https://ankara-kapinda-servis.vercel.app/pursaklar</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Sincan Servis -->
+    <url>
+        <loc>https://ankara-kapinda-servis.vercel.app/sincan</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Gölbaşı Servis -->
+    <url>
+        <loc>https://ankara-kapinda-servis.vercel.app/golbasi</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
