@@ -2,15 +2,15 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "ankarakapindaservis.com.tr" }],
-      "destination": "https://www.ankarakapindaservis.com/:path*",
+      "destination": "https://www.ankarakapindaservis.com/$1",
       "permanent": true
     },
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.ankarakapindaservis.com.tr" }],
-      "destination": "https://www.ankarakapindaservis.com/:path*",
+      "destination": "https://www.ankarakapindaservis.com/$1",
       "permanent": true
     },
     { "source": "/kecioren", "destination": "/kecioren-beyaz-esya-servisi/", "permanent": true },
