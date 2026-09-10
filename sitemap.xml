@@ -1,82 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Ana Sayfa -->
-    <url>
-        <loc>https://www.ankarakapindaservis.com/</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <!-- Keçiören Servis -->
-    <url>
-        <loc>https://www.ankarakapindaservis.com/kecioren</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Çankaya Servis -->
-    <url>
-        <loc>https://www.ankarakapindaservis.com/cankaya</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Yenimahalle Servis -->
-    <url>
-        <loc>https://www.ankarakapindaservis.com/yenimahalle</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Mamak Servis -->
-    <url>
-        <loc>https://www.ankarakapindaservis.com/mamak</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Altındağ Servis -->
-    <url>
-        <loc>https://www.ankarakapindaservis.com/altindag</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Etimesgut Servis -->
-    <url>
-        <loc>https://www.ankarakapindaservis.com/etimesgut</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Pursaklar Servis -->
-    <url>
-        <loc>https://www.ankarakapindaservis.com/pursaklar</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Sincan Servis -->
-    <url>
-        <loc>https://www.ankarakapindaservis.com/sincan</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Gölbaşı Servis -->
-    <url>
-        <loc>https://www.ankarakapindaservis.com/golbasi</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/cihazlar/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/bolgeler/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/iletisim/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/buzdolabi-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/camasir-makinesi-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/bulasik-makinesi-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/kurutma-makinesi-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/klima-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/televizyon-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/ankastre-firin-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/cankaya-beyaz-esya-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/kecioren-beyaz-esya-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/yenimahalle-beyaz-esya-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/mamak-beyaz-esya-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/altindag-beyaz-esya-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/etimesgut-beyaz-esya-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/pursaklar-beyaz-esya-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/sincan-beyaz-esya-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ankarakapindaservis.com/golbasi-beyaz-esya-servisi/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

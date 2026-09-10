@@ -1,0 +1,26 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "ankarakapindaservis.com.tr" }],
+      "destination": "https://www.ankarakapindaservis.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.ankarakapindaservis.com.tr" }],
+      "destination": "https://www.ankarakapindaservis.com/:path*",
+      "permanent": true
+    },
+    { "source": "/kecioren", "destination": "/kecioren-beyaz-esya-servisi/", "permanent": true },
+    { "source": "/cankaya", "destination": "/cankaya-beyaz-esya-servisi/", "permanent": true },
+    { "source": "/yenimahalle", "destination": "/yenimahalle-beyaz-esya-servisi/", "permanent": true },
+    { "source": "/mamak", "destination": "/mamak-beyaz-esya-servisi/", "permanent": true },
+    { "source": "/altindag", "destination": "/altindag-beyaz-esya-servisi/", "permanent": true },
+    { "source": "/etimesgut", "destination": "/etimesgut-beyaz-esya-servisi/", "permanent": true },
+    { "source": "/pursaklar", "destination": "/pursaklar-beyaz-esya-servisi/", "permanent": true },
+    { "source": "/sincan", "destination": "/sincan-beyaz-esya-servisi/", "permanent": true },
+    { "source": "/golbasi", "destination": "/golbasi-beyaz-esya-servisi/", "permanent": true }
+  ]
+}
