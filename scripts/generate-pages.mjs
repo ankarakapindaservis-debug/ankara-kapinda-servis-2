@@ -8,6 +8,8 @@ const SITE = "https://www.ankarakapindaservis.com";
 const PHONE_DISPLAY = "0540 008 12 28";
 const PHONE_TEL = "05400081228";
 const YEAR = "2026";
+const ADS_TAG_ID = "AW-18400736460";
+const ADS_CALL_LABEL = "AW-18400736460/1TxkCOnT1_4cEMzpk8ZE";
 const LASTMOD = "2026-09-10";
 
 const DEVICES = [
@@ -459,6 +461,13 @@ function layout({
     <meta name="theme-color" content="#0f2c59">
     <link rel="icon" href="${assetPrefix}favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="${assetPrefix}css/site.css?v=20260910d">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=${ADS_TAG_ID}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${ADS_TAG_ID}');
+    </script>
     <script type="application/ld+json">${JSON.stringify(Array.isArray(jsonLd) ? { "@context": "https://schema.org", "@graph": jsonLd.map((item) => { const { "@context": _, ...rest } = item; return rest; }) } : jsonLd)}</script>
 </head>
 <body>
@@ -500,6 +509,15 @@ function layout({
     <div class="sticky-footer">
         <a href="tel:${PHONE_TEL}" class="sticky-btn">Hemen servis çağır — ${PHONE_DISPLAY}</a>
     </div>
+    <script>
+      document.addEventListener('click', function (event) {
+        var target = event.target;
+        if (!target || typeof target.closest !== 'function') return;
+        if (!target.closest('a[href^="tel:"]')) return;
+        if (typeof gtag !== 'function') return;
+        gtag('event', 'conversion', { 'send_to': '${ADS_CALL_LABEL}' });
+      });
+    </script>
 </body>
 </html>
 `;
