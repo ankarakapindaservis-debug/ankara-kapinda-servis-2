@@ -10,7 +10,7 @@ const PHONE_TEL = "05400081228";
 const YEAR = "2026";
 const ADS_TAG_ID = "AW-18400736460";
 const ADS_CALL_LABEL = "AW-18400736460/1TxkCOnT1_4cEMzpk8ZE";
-const LASTMOD = "2026-09-10";
+const LASTMOD = "2026-09-29";
 
 const DEVICES = [
   {
@@ -258,6 +258,53 @@ const DISTRICTS = [
     neighborhoods: ["Gölbaşı İlçesi", "İncek"],
   },
 ];
+
+const COMBO_DEVICES = DEVICES.filter((d) => d.slug !== "televizyon-servisi");
+
+function districtKey(district) {
+  return district.slug.replace(/-beyaz-esya-servisi$/, "");
+}
+
+function comboPath(district, device) {
+  return `${districtKey(district)}-${device.slug}`;
+}
+
+function inDistrict(district) {
+  switch (district.name) {
+    case "Çankaya":
+      return "Çankaya’da";
+    case "Keçiören":
+      return "Keçiören’de";
+    case "Yenimahalle":
+      return "Yenimahalle’de";
+    case "Mamak":
+      return "Mamak’ta";
+    case "Altındağ":
+      return "Altındağ’da";
+    case "Etimesgut":
+      return "Etimesgut’ta";
+    case "Pursaklar":
+      return "Pursaklar’da";
+    case "Sincan":
+      return "Sincan ilçesi genelinde";
+    case "Gölbaşı":
+      return "Gölbaşı ilçesi ve İncek semtinde";
+    default:
+      return `${district.name}’da`;
+  }
+}
+
+function comboPlaceTitle(district) {
+  if (district.name === "Gölbaşı") return "Gölbaşı ve İncek";
+  if (district.name === "Sincan") return "Sincan İlçesi";
+  return district.name;
+}
+
+function whereWeCome(district) {
+  if (district.name === "Sincan") return "Sincan ilçesi genelindeki adresinize";
+  if (district.name === "Gölbaşı") return "Gölbaşı ilçesi veya İncek semtindeki adresinize";
+  return "aşağıdaki listede yer alan semtinize";
+}
 
 const FAQ_HOME = [
   {
@@ -648,9 +695,10 @@ function devicePage(device) {
       a: "Keçiören, Altındağ, Pursaklar, Mamak, Yenimahalle, Etimesgut, Çankaya, Sincan ilçesi geneli ile Gölbaşı ilçesi ve İncek semti.",
     },
   ];
-  const districtLinks = DISTRICTS.map(
-    (d) => textCard(`../${d.slug}/`, d.name, `${device.name} servisi`)
-  ).join("\n            ");
+  const districtLinks = DISTRICTS.map((d) => {
+    const href = device.slug === "televizyon-servisi" ? `../${d.slug}/` : `../${comboPath(d, device)}/`;
+    return textCard(href, d.name, `${device.name} servisi`);
+  }).join("\n            ");
   const body = `<main id="icerik" class="container">
         ${noticeBlock()}
         ${processBlock()}
@@ -669,15 +717,16 @@ function devicePage(device) {
             <div class="link-grid">
             ${districtLinks}
             </div>
-            ${DISTRICTS.map(
-              (d) => `<details>
+            ${DISTRICTS.map((d) => {
+              const href = device.slug === "televizyon-servisi" ? `../${d.slug}/` : `../${comboPath(d, device)}/`;
+              return `<details>
                 <summary>${districtSummary(d)}</summary>
                 <div class="accordion-content">
                     ${badgeGrid(d.neighborhoods)}
-                    <p style="margin-top:12px;"><a href="../${d.slug}/">${d.name} servis sayfası</a></p>
+                    <p style="margin-top:12px;"><a href="${href}">${d.name} ${device.name.toLowerCase()} servisi</a></p>
                 </div>
-            </details>`
-            ).join("\n            ")}
+            </details>`;
+            }).join("\n            ")}
         </section>
         ${faqBlock(faqs)}
     </main>`;
@@ -725,9 +774,10 @@ function districtPage(district) {
       a: "Tüm işlemler 1 yıl belgeli garanti altındadır.",
     },
   ];
-  const deviceLinks = DEVICES.map(
-    (d) => photoCard(`../${d.slug}/`, `../images/devices/${d.photo}`, d.name, `${district.name} için yerinde tamir`)
-  ).join("\n            ");
+  const deviceLinks = DEVICES.map((d) => {
+    const href = d.slug === "televizyon-servisi" ? `../${d.slug}/` : `../${comboPath(district, d)}/`;
+    return photoCard(href, `../images/devices/${d.photo}`, d.name, `${district.name} için yerinde tamir`);
+  }).join("\n            ");
   const body = `<main id="icerik" class="container">
         ${noticeBlock()}
         ${processBlock()}
@@ -745,7 +795,7 @@ function districtPage(district) {
                 <summary>${d.name} markaları</summary>
                 <div class="accordion-content">
                     ${badgeGrid(d.brands)}
-                    <p style="margin-top:12px;"><a href="../${d.slug}/">${d.name} servisi</a></p>
+                    <p style="margin-top:12px;"><a href="${d.slug === "televizyon-servisi" ? `../${d.slug}/` : `../${comboPath(district, d)}/`}">${district.name} ${d.name.toLowerCase()} servisi</a></p>
                 </div>
             </details>`
             ).join("\n            ")}
@@ -783,6 +833,97 @@ function districtPage(district) {
       { name: district.name, href: "./" },
     ],
     heroImage: "images/devices/bolge.jpg",
+  });
+}
+
+function comboPage(district, device) {
+  const prefix = "../";
+  const pathSlug = comboPath(district, device);
+  const place = comboPlaceTitle(district);
+  const locative = inDistrict(district);
+  const deviceLower = device.name.toLowerCase();
+  const title = `${place} ${device.name} Servisi | Yerinde Tamir`;
+  const h1 = `${place} ${device.name} Servisi`;
+  const lead = `${locative} ${deviceLower} tamiri. Aynı gün yerinde servis. Tüm işlemler 1 yıl belgeli garantilidir.`;
+  const description = `${locative} ${deviceLower} arızasına aynı gün yerinde tamir. 1 yıl belgeli garanti. 0540 008 12 28.`;
+  const faqs = [
+    {
+      q: `${locative} ${deviceLower} tamiri aynı gün yapılır mı?`,
+      a: "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit ve onarım yapılır. Kayıt telefon hattımızdan açılır.",
+    },
+    {
+      q: "Garanti süresi nedir?",
+      a: "Tüm işlemler 1 yıl belgeli garanti altındadır. İşçilik ve değiştirilen parçalar bu kapsamdadır.",
+    },
+    {
+      q: "Yetkili servis misiniz?",
+      a: "Hayır. Ankara Kapında Servis özel teknik servistir; herhangi bir markanın yetkili servisi veya bayisi değildir.",
+    },
+  ];
+  const otherDevices = COMBO_DEVICES.filter((d) => d.slug !== device.slug)
+    .map((d) => textCard(`../${comboPath(district, d)}/`, d.name, `${place} için yerinde tamir`))
+    .join("\n            ");
+  const otherDistricts = DISTRICTS.filter((d) => d.slug !== district.slug)
+    .map((d) => textCard(`../${comboPath(d, device)}/`, comboPlaceTitle(d), `${device.name} servisi`))
+    .join("\n            ");
+  const body = `<main id="icerik" class="container">
+        ${noticeBlock()}
+        ${processBlock()}
+        <article class="prose-card">
+            <p>${locative} ${deviceLower} arızalarında Ankara Kapında Servis gezici ekiple yerinde tespit ve onarım yapar. Kayıt telefonla alınır; ekip ${whereWeCome(district)} gelir.</p>
+            <p>${device.intro[1] ?? "Onayınız alınmadan işlem başlamaz. Tamamlanan işçilik ve değişen parçalar 1 yıl belgeli garanti altındadır."}</p>
+            <p>Sık görülen arızalar:</p>
+            <ul>${device.faults.map((f) => `<li>${f}</li>`).join("")}</ul>
+        </article>
+        <section class="section-card">
+            <h2 class="section-title"><span class="title-text">Semtler</span></h2>
+            <div class="badge-grid">${district.neighborhoods.map((n) => `<span class="badge-item">${n}</span>`).join("")}</div>
+        </section>
+        <section class="section-card">
+            <h2 class="section-title"><span class="title-text">Baktığımız markalar</span></h2>
+            <div class="badge-grid">${device.brands.map((b) => `<span class="badge-item">${b}</span>`).join("")}</div>
+            <p class="accordion-content" style="padding-left:0;padding-right:0;">Bu markaların yetkili servisi değiliz. Bilgilendirme amaçlıdır.</p>
+        </section>
+        <section class="section-card">
+            <h2 class="section-title"><span class="title-text">Bu ilçede diğer cihazlar</span></h2>
+            <div class="link-grid">
+            ${otherDevices}
+            </div>
+            <p style="margin-top:12px;"><a href="../${district.slug}/">${district.name} servis sayfası</a> · <a href="../${device.slug}/">${device.name} Ankara servisi</a></p>
+        </section>
+        <section class="section-card">
+            <h2 class="section-title"><span class="title-text">Diğer ilçeler</span></h2>
+            <div class="link-grid">
+            ${otherDistricts}
+            </div>
+        </section>
+        ${faqBlock(faqs)}
+    </main>`;
+
+  return layout({
+    title,
+    description,
+    path: `/${pathSlug}/`,
+    assetPrefix: prefix,
+    current: "bolgeler",
+    jsonLd: [
+      localBusiness(),
+      faqSchema(faqs),
+      breadcrumbSchema([
+        { name: "Ana sayfa", path: "/" },
+        { name: district.name, path: `/${district.slug}/` },
+        { name: `${place} ${device.name}`, path: `/${pathSlug}/` },
+      ]),
+    ],
+    body,
+    h1,
+    lead,
+    crumbs: [
+      { name: "Ana sayfa", href: "../" },
+      { name: district.name, href: `../${district.slug}/` },
+      { name: device.name, href: "./" },
+    ],
+    heroImage: `images/devices/${device.photo}`,
   });
 }
 
@@ -952,6 +1093,10 @@ function notFoundPage() {
 }
 
 function sitemap() {
+  const comboUrls = [];
+  for (const district of DISTRICTS) {
+    for (const device of COMBO_DEVICES) comboUrls.push(`/${comboPath(district, device)}/`);
+  }
   const urls = [
     "/",
     "/cihazlar/",
@@ -959,6 +1104,7 @@ function sitemap() {
     "/iletisim/",
     ...DEVICES.map((d) => `/${d.slug}/`),
     ...DISTRICTS.map((d) => `/${d.slug}/`),
+    ...comboUrls,
   ];
   const body = urls
     .map(
@@ -966,7 +1112,7 @@ function sitemap() {
     <loc>${SITE}${loc}</loc>
     <lastmod>${LASTMOD}</lastmod>
     <changefreq>${loc === "/" ? "weekly" : "monthly"}</changefreq>
-    <priority>${loc === "/" ? "1.0" : "0.8"}</priority>
+    <priority>${loc === "/" ? "1.0" : loc.includes("-beyaz-esya-servisi") || loc.endsWith("-servisi/") ? "0.8" : "0.7"}</priority>
   </url>`
     )
     .join("\n");
@@ -977,6 +1123,26 @@ ${body}
 `;
 }
 
+function adsFeedCsv() {
+  const rows = [["Page URL", "Custom label"]];
+  rows.push([`${SITE}/`, "ana"]);
+  rows.push([`${SITE}/cihazlar/`, "cihaz"]);
+  rows.push([`${SITE}/bolgeler/`, "ilce"]);
+  rows.push([`${SITE}/iletisim/`, "ana"]);
+  for (const device of DEVICES) {
+    rows.push([`${SITE}/${device.slug}/`, device.slug === "televizyon-servisi" ? "tv" : "cihaz"]);
+  }
+  for (const district of DISTRICTS) {
+    rows.push([`${SITE}/${district.slug}/`, "ilce"]);
+  }
+  for (const district of DISTRICTS) {
+    for (const device of COMBO_DEVICES) {
+      rows.push([`${SITE}/${comboPath(district, device)}/`, "ilce-cihaz"]);
+    }
+  }
+  return rows.map((r) => r.join(",")).join("\n") + "\n";
+}
+
 writePage("index.html", homepage());
 writePage("cihazlar/index.html", hubCihazlar());
 writePage("bolgeler/index.html", hubBolgeler());
@@ -984,6 +1150,25 @@ writePage("iletisim/index.html", iletisimPage());
 writePage("404.html", notFoundPage());
 for (const device of DEVICES) writePage(`${device.slug}/index.html`, devicePage(device));
 for (const district of DISTRICTS) writePage(`${district.slug}/index.html`, districtPage(district));
+let comboCount = 0;
+for (const district of DISTRICTS) {
+  for (const device of COMBO_DEVICES) {
+    writePage(`${comboPath(district, device)}/index.html`, comboPage(district, device));
+    comboCount += 1;
+  }
+}
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"), sitemap(), "utf8");
+function kelimeUrlCsv() {
+  const rows = [["Ilce", "Cihaz", "Nihai URL"]];
+  for (const district of DISTRICTS) {
+    for (const device of COMBO_DEVICES) {
+      rows.push([comboPlaceTitle(district), device.name, `${SITE}/${comboPath(district, device)}/`]);
+    }
+  }
+  return rows.map((r) => r.join(",")).join("\n") + "\n";
+}
 
-console.log("Sayfalar yazıldı:", 4 + DEVICES.length + DISTRICTS.length + 1);
+fs.writeFileSync(path.join(__dirname, "google-ads-sayfa-feed.csv"), adsFeedCsv(), "utf8");
+fs.writeFileSync(path.join(__dirname, "google-ads-kelime-ilce-cihaz-url.csv"), kelimeUrlCsv(), "utf8");
+
+console.log("Sayfalar yazıldı:", 4 + DEVICES.length + DISTRICTS.length + 1 + comboCount, "| ilçe×cihaz:", comboCount);
