@@ -643,11 +643,13 @@ function writePage(relPath, html) {
 }
 
 function photoCard(href, imgSrc, strong, span) {
-  return `<a class="link-card has-photo" href="${href}"><img src="${imgSrc}" alt="" width="800" height="450" loading="lazy"><strong>${strong}</strong><span>${span}</span></a>`;
+  const sub = span ? `<span>${span}</span>` : "";
+  return `<a class="link-card has-photo" href="${href}"><img src="${imgSrc}" alt="" width="800" height="450" loading="lazy"><strong>${strong}</strong>${sub}</a>`;
 }
 
 function textCard(href, strong, span) {
-  return `<a class="link-card" href="${href}"><strong>${strong}</strong><span>${span}</span></a>`;
+  const sub = span ? `<span>${span}</span>` : "";
+  return `<a class="link-card" href="${href}"><strong>${strong}</strong>${sub}</a>`;
 }
 
 function homepage() {
@@ -848,7 +850,7 @@ function districtPage(district) {
   ];
   const deviceLinks = DEVICES.map((d) => {
     const href = d.slug === "televizyon-servisi" ? `../${d.slug}/` : `../${comboPath(district, d)}/`;
-    return photoCard(href, `../images/devices/${d.photo}`, d.name, `${district.name} için yerinde tamir`);
+    return photoCard(href, `../images/devices/${d.photo}`, d.name);
   }).join("\n            ");
   const body = `<main id="icerik" class="container">
         ${noticeBlock()}
@@ -943,7 +945,7 @@ function comboPage(district, device) {
     },
   ].concat(device.extraFaqs ?? []);
   const otherDevices = COMBO_DEVICES.filter((d) => d.slug !== device.slug)
-    .map((d) => textCard(`../${comboPath(district, d)}/`, d.name, `${place} için yerinde tamir`))
+    .map((d) => textCard(`../${comboPath(district, d)}/`, d.name))
     .join("\n            ");
   const otherDistricts = DISTRICTS.filter((d) => d.slug !== district.slug)
     .map((d) => textCard(`../${comboPath(d, device)}/`, comboPlaceTitle(d), `${device.name} servisi`))
