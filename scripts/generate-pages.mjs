@@ -10,7 +10,7 @@ const PHONE_TEL = "05400081228";
 const YEAR = "2026";
 const ADS_TAG_ID = "AW-18400736460";
 const ADS_CALL_LABEL = "AW-18400736460/1TxkCOnT1_4cEMzpk8ZE";
-const LASTMOD = "2026-09-29";
+const LASTMOD = "2026-11-01";
 
 const DEVICES = [
   {
@@ -146,6 +146,67 @@ const DEVICES = [
     ],
     brands: ["Arçelik", "Beko", "Altus", "Bosch", "Siemens", "Profilo", "Neff", "Gaggenau", "Miele", "Kumtel", "Luxell", "Franke", "Ferre", "Electrolux", "Vestel", "Samsung", "Termikel", "Silverline", "Simfer", "Alveus", "Bertazzoni", "Teka", "Blanco", "Esty", "Ukinox", "Dominox", "LG", "Grundig", "Blomberg", "AEG", "Zanussi"],
   },
+  {
+    slug: "ocak-servisi",
+    name: "Ocak",
+    photo: "ocak.jpg",
+    dsaOnly: true,
+    title: "Ankara Ocak Servisi | Set Üstü ve Ankastre Ocak Tamiri",
+    h1: "Ankara Ocak Servisi",
+    lead: "Yanmayan, ateşlemeyen veya alevi kesilen set üstü ve ankastre ocaklar için yerinde tamir.",
+    intro: [
+      "Set üstü ve ankastre ocakta çakmak, ateşleme, emniyet ve tek gözün yanmaması yerinde tespit edilir. Ankara Kapında Servis cihazı söktürmeden arızaya bakar.",
+      "Ocak kurulumu ve sıfır cihaz montajı yapılmaz. Arıza tespiti yerinde yapılır, onayınız olmadan işlem başlamaz. Tamir 1 yıl belgeli garantilidir.",
+    ],
+    faults: [
+      "Hiç ateşlememe veya çakmağın sürekli tıklaması",
+      "Tek gözün yanmaması, alevin kendiliğinden sönmesi",
+      "Emniyet ve gaz valfi arızası",
+      "Düğme, buji ve kablo sorunları",
+    ],
+    brands: ["Arçelik", "Beko", "Altus", "Bosch", "Siemens", "Profilo", "Neff", "Gaggenau", "Miele", "Kumtel", "Luxell", "Franke", "Ferre", "Electrolux", "Vestel", "Samsung", "Termikel", "Silverline", "Simfer", "Alveus", "Bertazzoni", "Teka", "Blanco", "Esty", "Ukinox", "Dominox", "LG", "Grundig", "Blomberg", "AEG", "Zanussi"],
+  },
+  {
+    slug: "kombi-servisi",
+    name: "Kombi",
+    photo: "kombi.jpg",
+    dsaOnly: true,
+    maintenance: true,
+    title: "Ankara Kombi Servisi | Tamir, Bakım ve Petek Temizleme",
+    h1: "Ankara Kombi Servisi",
+    lead: "Ateşlemeyen, sıcak su vermeyen veya basıncı düşen kombiler için yerinde tamir. Kombi bakımı, petek bakımı ve petek temizleme de aynı gün yerinde yapılır.",
+    intro: [
+      "Kombide ateşleme, sıcak su, basınç düşmesi, eşanjör ve sirkülasyon arızaları yerinde tespit edilir. Ankara Kapında Servis kaydı telefonla alır, ekip adrese gelir.",
+      "Kombi bakımı da aynı kapsamda yerinde yapılır: yanma, basınç, filtre ve emniyet kontrolü. Kombi montajı ve doğalgaz abonelik işlemi yapılmaz. Onayınız olmadan işlem başlamaz. Tamir ve bakım 1 yıl belgeli garantilidir.",
+      "Petek bakımı ve petek temizleme de yerinde yapılır. Tıkanmış petek kombiyi yorar; su dolaşımı zayıflar, ev geç ısınır.",
+      "Petek temizleme sonrası ısınma performansı düzelir. Kombi bakımı ile birlikte yapıldığında aynı konutta doğalgaz faturasına tasarruf olarak yansır.",
+    ],
+    faults: [
+      "Ateşlememe, alev sönmesi",
+      "Sıcak su gelmemesi veya suyun ısınmaması",
+      "Basınç düşmesi, su eksiltme",
+      "Hata kodu, pompa ve eşanjör arızası",
+    ],
+    care: [
+      "Yanma ve alev kontrolü",
+      "Basınç ve genleşme tankı kontrolü",
+      "Filtre temizliği",
+      "Emniyet ve su kaçak kontrolü",
+      "Petek bakımı",
+      "Petek temizleme",
+    ],
+    extraFaqs: [
+      {
+        q: "Petek temizleme ısınmayı ve faturayı etkiler mi?",
+        a: "Petek temizleme, tıkanmış peteğin su dolaşımını rahatlatır ve ısınma performansını düzeltir. Petek bakımı ile kombi bakımı birlikte yapıldığında doğalgaz faturasına tasarruf olarak yansır.",
+      },
+    ],
+    brands: ["Vaillant", "Viessmann", "Bosch", "Buderus", "Demirdöküm", "E.C.A.", "Baymak", "Ariston", "Ferroli", "Alarko", "Protherm", "Airfel", "Termoteknik", "Arçelik", "Beko", "Warmhaus", "İmmergas"],
+    brandNotes: [
+      "E.C.A. kombilerin tamiri ve bakımı yerinde yapılır.",
+      "ECA kombilerde ateşleme, sıcak su ve basınç arızalarına da aynı gün bakılır.",
+    ],
+  },
 ];
 
 const DISTRICTS = [
@@ -156,7 +217,7 @@ const DISTRICTS = [
     h1: "Çankaya Beyaz Eşya ve Klima Servisi",
     lead: "Çankaya’da hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Aynı gün yerinde beyaz eşya ve klima servisi.",
     intro: [
-      "Çankaya’da buzdolabı, çamaşır ve bulaşık makinesi, kurutma, klima, televizyon ve ankastre fırın arızalarına gezici ekiplerimizle aynı gün bakıyoruz. Kayıt telefonla açılır; ekip listedeki semtinize gelir, tespiti yerinde yapar.",
+      "Çankaya’da buzdolabı, çamaşır ve bulaşık makinesi, kurutma, klima, televizyon, ankastre fırın, ocak ve kombi arızalarına gezici ekiplerimizle aynı gün bakıyoruz. Kayıt telefonla açılır; ekip listedeki semtinize gelir, tespiti yerinde yapar.",
       "Bu ilçede hizmet verdiğimiz semtler aşağıda eksiksiz listelenmiştir.",
     ],
     neighborhoods: ["Alacaatlı", "Anıttepe", "Ayrancı", "Balgat", "Bahçelievler", "Bilkent", "Beytepe", "Beysukent", "Esat", "Cebeci", "Cevizlidere", "Çayyolu", "Çiğdem Mahallesi", "Ümitköy", "Çukurambar", "Emek", "GOP", "Güvenevler", "Birlik Mahallesi", "Kavaklıdere", "Kırkkonaklar", "Maltepe", "Mebusevleri", "Mustafa Kemal Mahallesi", "Oran", "Tunalı", "Seyranbağları", "Söğütözü", "Dikmen", "Yaşamkent"],
@@ -192,7 +253,7 @@ const DISTRICTS = [
     h1: "Mamak Beyaz Eşya ve Klima Servisi",
     lead: "Mamak’ta hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Yerinde beyaz eşya ve klima servisi.",
     intro: [
-      "Mamak’ta aynı gün gezici servis ile buzdolabı, çamaşır makinesi, bulaşık makinesi, klima ve ankastre arızalarına bakıyoruz. Tespit adreste yapılır, fiyat onayınız sonrası işe başlanır.",
+      "Mamak’ta aynı gün gezici servis ile buzdolabı, çamaşır makinesi, bulaşık makinesi, klima, ankastre, ocak ve kombi arızalarına bakıyoruz. Tespit adreste yapılır, fiyat onayınız sonrası işe başlanır.",
       "Bu ilçede hizmet verdiğimiz semtler aşağıda eksiksiz listelenmiştir.",
     ],
     neighborhoods: ["Abidinpaşa", "Akdere", "Bahçelerüstü", "Boğaziçi", "Cengizhan", "Demirlibahçe", "Durali Alıç", "Ege Mahallesi", "Fahri Korutürk", "General Zeki Doğan", "Gülveren", "Hürel", "Hüseyingazi", "Kartaltepe", "Misket Mahallesi", "Mutlu Mahallesi", "Saimekadın", "Tuzluçayır", "Türközü", "Üreğil", "Yeşilbayır", "Zirvekent"],
@@ -240,7 +301,7 @@ const DISTRICTS = [
     h1: "Sincan Beyaz Eşya ve Klima Servisi",
     lead: "Sincan ilçesi genelinde aynı gün yerinde beyaz eşya, klima ve ankastre servisi.",
     intro: [
-      "Sincan ilçesi genelinde gezici ekiplerimizle buzdolabı, çamaşır ve bulaşık makinesi, kurutma, klima, televizyon ve ankastre fırın arızalarına bakıyoruz.",
+      "Sincan ilçesi genelinde gezici ekiplerimizle buzdolabı, çamaşır ve bulaşık makinesi, kurutma, klima, televizyon, ankastre fırın, ocak ve kombi arızalarına bakıyoruz.",
       "Telefonda fiyat verilmez. Yerinde tespit, onayınız ve 1 yıl belgeli garanti ile ilerleriz.",
     ],
     neighborhoods: ["Sincan İlçesi Geneli"],
@@ -426,6 +487,11 @@ function badgeGrid(items) {
   return `<div class="badge-grid">${items.map((item) => `<span class="badge-item">${item}</span>`).join("")}</div>`;
 }
 
+function brandNotes(device) {
+  if (!device.brandNotes?.length) return "";
+  return device.brandNotes.map((note) => `<p>${note}</p>`).join("\n            ");
+}
+
 function districtSummary(district) {
   if (district.name === "Sincan") return "Sincan İlçesi Geneli";
   if (district.name === "Gölbaşı") return "Gölbaşı İlçesi ve İncek Semti";
@@ -609,7 +675,7 @@ function homepage() {
         ${noticeBlock()}
         ${processBlock()}
         <div class="seo-intro-card">
-            <p><strong>Ankara Kapında Servis;</strong> buzdolabı, çamaşır makinesi, bulaşık makinesi, kurutma makinesi, klima, televizyon ve ankastre fırın için Keçiören, Altındağ, Pursaklar, Mamak, Yenimahalle, Etimesgut, Çankaya, Sincan ilçesi geneli ile Gölbaşı ilçesi ve İncek semtinde aynı gün yerinde tamir ve bakım sağlar.</p>
+            <p><strong>Ankara Kapında Servis;</strong> buzdolabı, çamaşır makinesi, bulaşık makinesi, kurutma makinesi, klima, televizyon, ankastre fırın, ocak ve kombi için Keçiören, Altındağ, Pursaklar, Mamak, Yenimahalle, Etimesgut, Çankaya, Sincan ilçesi geneli ile Gölbaşı ilçesi ve İncek semtinde aynı gün yerinde tamir ve bakım sağlar.</p>
         </div>
         <div class="features-grid">
             <div class="feature-box">
@@ -683,8 +749,12 @@ function devicePage(device) {
   const prefix = "../";
   const faqs = [
     {
-      q: `Ankara’da ${device.name.toLowerCase()} tamiri aynı gün yapılır mı?`,
-      a: "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit ve onarım yapılır. Kayıt telefon hattımızdan açılır.",
+      q: device.maintenance
+        ? `Ankara’da ${device.name.toLowerCase()} tamiri ve bakımı aynı gün yapılır mı?`
+        : `Ankara’da ${device.name.toLowerCase()} tamiri aynı gün yapılır mı?`,
+      a: device.maintenance
+        ? "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit, onarım ve bakım yapılır. Kayıt telefon hattımızdan açılır."
+        : "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit ve onarım yapılır. Kayıt telefon hattımızdan açılır.",
     },
     {
       q: "Garanti süresi nedir?",
@@ -694,7 +764,7 @@ function devicePage(device) {
       q: "Hangi ilçelere geliyorsunuz?",
       a: "Keçiören, Altındağ, Pursaklar, Mamak, Yenimahalle, Etimesgut, Çankaya, Sincan ilçesi geneli ile Gölbaşı ilçesi ve İncek semti.",
     },
-  ];
+  ].concat(device.extraFaqs ?? []);
   const districtLinks = DISTRICTS.map((d) => {
     const href = device.slug === "televizyon-servisi" ? `../${d.slug}/` : `../${comboPath(d, device)}/`;
     return textCard(href, d.name, `${device.name} servisi`);
@@ -706,11 +776,13 @@ function devicePage(device) {
             ${device.intro.map((p) => `<p>${p}</p>`).join("\n            ")}
             <p>Sık görülen arızalar:</p>
             <ul>${device.faults.map((f) => `<li>${f}</li>`).join("")}</ul>
+            ${device.care ? `<p>Bakımda bakılanlar:</p>\n            <ul>${device.care.map((f) => `<li>${f}</li>`).join("")}</ul>` : ""}
         </article>
         <section class="section-card">
             <h2 class="section-title"><span class="title-text">Baktığımız markalar</span></h2>
             <div class="badge-grid">${device.brands.map((b) => `<span class="badge-item">${b}</span>`).join("")}</div>
             <p class="accordion-content" style="padding-left:0;padding-right:0;">Bu markaların yetkili servisi değiliz. Bilgilendirme amaçlıdır.</p>
+            ${brandNotes(device)}
         </section>
         <section class="section-card">
             <h2 class="section-title"><span class="title-text">İlçe seçin</span></h2>
@@ -767,7 +839,7 @@ function districtPage(district) {
     },
     {
       q: "Hangi cihazlara bakıyorsunuz?",
-      a: "Buzdolabı, çamaşır makinesi, bulaşık makinesi, kurutma makinesi, klima, televizyon ve ankastre fırın.",
+      a: "Buzdolabı, çamaşır makinesi, bulaşık makinesi, kurutma makinesi, klima, televizyon, ankastre fırın, set üstü ve ankastre ocak, kombi.",
     },
     {
       q: "Garanti var mı?",
@@ -842,14 +914,24 @@ function comboPage(district, device) {
   const place = comboPlaceTitle(district);
   const locative = inDistrict(district);
   const deviceLower = device.name.toLowerCase();
-  const title = `${place} ${device.name} Servisi | Yerinde Tamir`;
+  const title = device.maintenance
+    ? `${place} ${device.name} Servisi | Tamir, Bakım ve Petek Temizleme`
+    : `${place} ${device.name} Servisi | Yerinde Tamir`;
   const h1 = `${place} ${device.name} Servisi`;
-  const lead = `${locative} ${deviceLower} tamiri. Aynı gün yerinde servis. Tüm işlemler 1 yıl belgeli garantilidir.`;
-  const description = `${locative} ${deviceLower} arızasına aynı gün yerinde tamir. 1 yıl belgeli garanti. 0540 008 12 28.`;
+  const lead = device.maintenance
+    ? `${locative} ${deviceLower} tamiri, kombi bakımı ve petek temizleme. Aynı gün yerinde servis. Tüm işlemler 1 yıl belgeli garantilidir.`
+    : `${locative} ${deviceLower} tamiri. Aynı gün yerinde servis. Tüm işlemler 1 yıl belgeli garantilidir.`;
+  const description = device.maintenance
+    ? `${locative} kombi bakımı ve petek temizleme yerinde yapılır. Isınma performansı düzelir, doğalgaz faturasına tasarruf olarak yansır. 1 yıl belgeli garanti. 0540 008 12 28.`
+    : `${locative} ${deviceLower} arızasına aynı gün yerinde tamir. 1 yıl belgeli garanti. 0540 008 12 28.`;
   const faqs = [
     {
-      q: `${locative} ${deviceLower} tamiri aynı gün yapılır mı?`,
-      a: "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit ve onarım yapılır. Kayıt telefon hattımızdan açılır.",
+      q: device.maintenance
+        ? `${locative} ${deviceLower} tamiri ve bakımı aynı gün yapılır mı?`
+        : `${locative} ${deviceLower} tamiri aynı gün yapılır mı?`,
+      a: device.maintenance
+        ? "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit, onarım ve bakım yapılır. Kayıt telefon hattımızdan açılır."
+        : "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit ve onarım yapılır. Kayıt telefon hattımızdan açılır.",
     },
     {
       q: "Garanti süresi nedir?",
@@ -859,7 +941,7 @@ function comboPage(district, device) {
       q: "Yetkili servis misiniz?",
       a: "Hayır. Ankara Kapında Servis özel teknik servistir; herhangi bir markanın yetkili servisi veya bayisi değildir.",
     },
-  ];
+  ].concat(device.extraFaqs ?? []);
   const otherDevices = COMBO_DEVICES.filter((d) => d.slug !== device.slug)
     .map((d) => textCard(`../${comboPath(district, d)}/`, d.name, `${place} için yerinde tamir`))
     .join("\n            ");
@@ -870,10 +952,11 @@ function comboPage(district, device) {
         ${noticeBlock()}
         ${processBlock()}
         <article class="prose-card">
-            <p>${locative} ${deviceLower} arızalarında Ankara Kapında Servis gezici ekiple yerinde tespit ve onarım yapar. Kayıt telefonla alınır; ekip ${whereWeCome(district)} gelir.</p>
-            <p>${device.intro[1] ?? "Onayınız alınmadan işlem başlamaz. Tamamlanan işçilik ve değişen parçalar 1 yıl belgeli garanti altındadır."}</p>
+            <p>${locative} ${deviceLower} ${device.maintenance ? "arıza ve bakım işlerinde" : "arızalarında"} Ankara Kapında Servis gezici ekiple yerinde tespit ve onarım yapar. Kayıt telefonla alınır; ekip ${whereWeCome(district)} gelir.</p>
+            ${(device.intro.slice(1).length ? device.intro.slice(1) : ["Onayınız alınmadan işlem başlamaz. Tamamlanan işçilik ve değişen parçalar 1 yıl belgeli garanti altındadır."]).map((p) => `<p>${p}</p>`).join("\n            ")}
             <p>Sık görülen arızalar:</p>
             <ul>${device.faults.map((f) => `<li>${f}</li>`).join("")}</ul>
+            ${device.care ? `<p>Bakımda bakılanlar:</p>\n            <ul>${device.care.map((f) => `<li>${f}</li>`).join("")}</ul>` : ""}
         </article>
         <section class="section-card">
             <h2 class="section-title"><span class="title-text">Semtler</span></h2>
@@ -883,6 +966,7 @@ function comboPage(district, device) {
             <h2 class="section-title"><span class="title-text">Baktığımız markalar</span></h2>
             <div class="badge-grid">${device.brands.map((b) => `<span class="badge-item">${b}</span>`).join("")}</div>
             <p class="accordion-content" style="padding-left:0;padding-right:0;">Bu markaların yetkili servisi değiliz. Bilgilendirme amaçlıdır.</p>
+            ${brandNotes(device)}
         </section>
         <section class="section-card">
             <h2 class="section-title"><span class="title-text">Bu ilçede diğer cihazlar</span></h2>
@@ -952,7 +1036,7 @@ function hubCihazlar() {
     </main>`;
   return layout({
     title: "Ankara Cihaz Servisleri | Beyaz Eşya, Klima ve TV",
-    description: "Buzdolabı, çamaşır, bulaşık, kurutma, klima, televizyon ve ankastre fırın için Ankara yerinde servis. 1 yıl belgeli garanti.",
+    description: "Buzdolabı, çamaşır, bulaşık, kurutma, klima, televizyon, ankastre fırın, ocak ve kombi için Ankara yerinde servis. 1 yıl belgeli garanti.",
     path: "/cihazlar/",
     assetPrefix: "../",
     current: "cihazlar",
@@ -1162,6 +1246,7 @@ function kelimeUrlCsv() {
   const rows = [["Ilce", "Cihaz", "Nihai URL"]];
   for (const district of DISTRICTS) {
     for (const device of COMBO_DEVICES) {
+      if (device.dsaOnly) continue;
       rows.push([comboPlaceTitle(district), device.name, `${SITE}/${comboPath(district, device)}/`]);
     }
   }
