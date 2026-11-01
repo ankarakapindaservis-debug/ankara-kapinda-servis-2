@@ -36,11 +36,11 @@ const DEVICES = [
     slug: "camasir-makinesi-servisi",
     name: "Çamaşır Makinesi",
     photo: "camasir.jpg",
-    title: "Ankara Çamaşır Makinesi Servisi | Yerinde Tamir",
+    title: "Ankara Çamaşır Makinesi Servisi | Tamir",
     h1: "Ankara Çamaşır Makinesi Servisi",
-    lead: "Su almayan, sıkmayan, titreyen veya hata kodu veren çamaşır makineleri için Ankara’nın 9 ilçesinde yerinde teknik servis.",
+    lead: "Su almayan, sıkmayan, titreyen veya hata kodu veren çamaşır makineleri için Ankara’nın 9 ilçesinde teknik servis.",
     intro: [
-      "Çamaşır makinesi arızası ev düzenini durdurur. Ankara Kapında Servis; su almama, sıkmama, program bitmeme, kapak kilidi, tahliye pompası ve rulman/titreşim sorunlarında aynı gün yerinde müdahale eder.",
+      "Çamaşır makinesi arızası ev düzenini durdurur. Ankara Kapında Servis; su almama, sıkmama, program bitmeme, kapak kilidi, tahliye pompası ve rulman/titreşim sorunlarında aynı gün müdahale eder.",
       "Önce arıza tespit edilir, net fiyat onayınıza sunulur. Onarım ve orijinal parça değişimi 1 yıl belgeli garantilidir.",
     ],
     faults: [
@@ -55,11 +55,11 @@ const DEVICES = [
     slug: "bulasik-makinesi-servisi",
     name: "Bulaşık Makinesi",
     photo: "bulasik.jpg",
-    title: "Ankara Bulaşık Makinesi Servisi | Yerinde Onarım",
+    title: "Ankara Bulaşık Makinesi Servisi | Onarım",
     h1: "Ankara Bulaşık Makinesi Servisi",
-    lead: "Yıkamayan, su tahliye etmeyen, koku yapan veya ısınmayan bulaşık makineleri için yerinde Ankara servisi.",
+    lead: "Yıkamayan, su tahliye etmeyen, koku yapan veya ısınmayan bulaşık makineleri için Ankara servisi.",
     intro: [
-      "Bulaşık makinesinde yıkama kalitesi, tahliye, ısıtıcı, tuz/parlatıcı sistemi ve pompa arızaları sık görülür. Ekiplerimiz cihaz başında tespit yapar, gerekirse yerinde onarır.",
+      "Bulaşık makinesinde yıkama kalitesi, tahliye, ısıtıcı, tuz/parlatıcı sistemi ve pompa arızaları sık görülür. Ekiplerimiz cihaz başında tespit yapar.",
       "Fiyat telefonda verilmez; yerinde netleşir. Tüm işlemler 1 yıl belgeli garanti kapsamındadır.",
     ],
     faults: [
@@ -76,9 +76,9 @@ const DEVICES = [
     photo: "kurutma.jpg",
     title: "Ankara Kurutma Makinesi Servisi | Bakım ve Tamir",
     h1: "Ankara Kurutma Makinesi Servisi",
-    lead: "Isınmayan, uzun süren veya hata veren kurutma makineleri için yerinde tamir ve bakım.",
+    lead: "Isınmayan, uzun süren veya hata veren kurutma makineleri için tamir ve bakım.",
     intro: [
-      "Kurutma makinesinde ısıtmama, programın bitmemesi, tüy filtresi ve hava kanalı tıkanıklığı, nem sensörü ve ısıtıcı arızaları öne çıkar. Ankara Kapında Servis, cihazı yerinde kontrol edip kalıcı çözüm üretir.",
+      "Kurutma makinesinde ısıtmama, programın bitmemesi, tüy filtresi ve hava kanalı tıkanıklığı, nem sensörü ve ısıtıcı arızaları öne çıkar. Ankara Kapında Servis, cihazı kontrol edip kalıcı çözüm üretir.",
       "Onayınız olmadan işlem başlamaz. İşçilik ve değişen parça 1 yıl belgeli garantilidir.",
     ],
     faults: [
@@ -95,9 +95,9 @@ const DEVICES = [
     photo: "klima.jpg",
     title: "Ankara Klima Servisi | Bakım, Gaz ve Arıza",
     h1: "Ankara Klima Servisi",
-    lead: "Soğutmayan veya ısıtmayan klimalar için gaz, bakım, arıza ve yerinde onarım. Ankara’nın 9 ilçesinde gezici ekip.",
+    lead: "Soğutmayan veya ısıtmayan klimalar için gaz, bakım ve arıza. Ankara’nın 9 ilçesinde gezici ekip.",
     intro: [
-      "Klima arızasında en sık görülenler soğutmama, gaz kaçağı, dış ünite sesi, su damlatma ve kart/elektronik sorunlarıdır. Yaz ve kış sezonunda aynı gün yerinde klima servisi veriyoruz.",
+      "Klima arızasında en sık görülenler soğutmama, gaz kaçağı, dış ünite sesi, su damlatma ve kart/elektronik sorunlarıdır. Yaz ve kış sezonunda aynı gün klima servisi veriyoruz.",
       "Bakım ve onarım sonrası yapılan iş 1 yıl belgeli garanti altındadır. Telefonda fiyat verilmez; tespit yerinde yapılır.",
     ],
     faults: [
@@ -112,11 +112,11 @@ const DEVICES = [
     slug: "televizyon-servisi",
     name: "Televizyon",
     photo: "televizyon.jpg",
-    title: "Ankara Televizyon Servisi | Yerinde TV Tamiri",
+    title: "Ankara Televizyon Servisi | TV Tamiri",
     h1: "Ankara Televizyon Servisi",
-    lead: "Açılmayan, görüntüsü gitmiş veya sesi kesilmiş televizyonlar için yerinde teknik servis.",
+    lead: "Açılmayan, görüntüsü gitmiş veya sesi kesilmiş televizyonlar için teknik servis.",
     intro: [
-      "Televizyonda açılmama, arka ışık, anakart, hoparlör ve giriş (HDMI) sorunları yerinde teşhis edilir. Taşınması riskli paneller için gezici servis avantajdır.",
+      "Televizyonda açılmama, arka ışık, anakart, hoparlör ve giriş (HDMI) sorunları teşhis edilir. Taşınması riskli paneller için gezici servis avantajdır.",
       "Parça gerekiyorsa onayınız alınır. Tamamlanan onarım 1 yıl belgeli garantilidir.",
     ],
     faults: [
@@ -131,11 +131,11 @@ const DEVICES = [
     slug: "ankastre-firin-servisi",
     name: "Ankastre Fırın",
     photo: "ankastre.jpg",
-    title: "Ankara Ankastre Fırın Servisi | Yerinde Tamir",
+    title: "Ankara Ankastre Fırın Servisi | Tamir",
     h1: "Ankara Ankastre Fırın Servisi",
-    lead: "Isınmayan, fanı çalışmayan veya termostat arızalı ankastre fırınlar için yerinde servis.",
+    lead: "Isınmayan, fanı çalışmayan veya termostat arızalı ankastre fırınlar için servis.",
     intro: [
-      "Ankastre fırında ısınmama, fan, rezistans, kapak menteşesi, cam ve elektronik saat/termostat arızalarına yerinde bakıyoruz. Mutfak tezgahına gömülü cihazlarda sök-tak bilinçli yapılır.",
+      "Ankastre fırında ısınmama, fan, rezistans, kapak menteşesi, cam ve elektronik saat/termostat arızalarına bakıyoruz. Mutfak tezgahına gömülü cihazlarda sök-tak bilinçli yapılır.",
       "Net fiyat yerinde tespit sonrası verilir. Tüm işlemler 1 yıl belgeli garanti altındadır.",
     ],
     faults: [
@@ -153,7 +153,7 @@ const DEVICES = [
     dsaOnly: true,
     title: "Ankara Ocak Servisi | Set Üstü ve Ankastre Ocak Tamiri",
     h1: "Ankara Ocak Servisi",
-    lead: "Yanmayan, ateşlemeyen veya alevi kesilen set üstü ve ankastre ocaklar için yerinde tamir.",
+    lead: "Yanmayan, ateşlemeyen veya alevi kesilen set üstü ve ankastre ocaklar için tamir.",
     intro: [
       "Set üstü ve ankastre ocakta çakmak, ateşleme, emniyet ve tek gözün yanmaması yerinde tespit edilir. Ankara Kapında Servis cihazı söktürmeden arızaya bakar.",
       "Ocak kurulumu ve sıfır cihaz montajı yapılmaz. Arıza tespiti yerinde yapılır, onayınız olmadan işlem başlamaz. Tamir 1 yıl belgeli garantilidir.",
@@ -174,11 +174,11 @@ const DEVICES = [
     maintenance: true,
     title: "Ankara Kombi Servisi | Tamir, Bakım ve Petek Temizleme",
     h1: "Ankara Kombi Servisi",
-    lead: "Ateşlemeyen, sıcak su vermeyen veya basıncı düşen kombiler için yerinde tamir. Kombi bakımı, petek bakımı ve petek temizleme de aynı gün yerinde yapılır.",
+    lead: "Ateşlemeyen, sıcak su vermeyen veya basıncı düşen kombiler için tamir. Kombi bakımı, petek bakımı ve petek temizleme de aynı gün yapılır.",
     intro: [
       "Kombide ateşleme, sıcak su, basınç düşmesi, eşanjör ve sirkülasyon arızaları yerinde tespit edilir. Ankara Kapında Servis kaydı telefonla alır, ekip adrese gelir.",
-      "Kombi bakımı da aynı kapsamda yerinde yapılır: yanma, basınç, filtre ve emniyet kontrolü. Kombi montajı ve doğalgaz abonelik işlemi yapılmaz. Onayınız olmadan işlem başlamaz. Tamir ve bakım 1 yıl belgeli garantilidir.",
-      "Petek bakımı ve petek temizleme de yerinde yapılır. Tıkanmış petek kombiyi yorar; su dolaşımı zayıflar, ev geç ısınır.",
+      "Kombi bakımı da aynı kapsamda yapılır: yanma, basınç, filtre ve emniyet kontrolü. Kombi montajı ve doğalgaz abonelik işlemi yapılmaz. Onayınız olmadan işlem başlamaz. Tamir ve bakım 1 yıl belgeli garantilidir.",
+      "Petek bakımı ve petek temizleme de yapılır. Tıkanmış petek kombiyi yorar; su dolaşımı zayıflar, ev geç ısınır.",
       "Petek temizleme sonrası ısınma performansı düzelir. Kombi bakımı ile birlikte yapıldığında aynı konutta doğalgaz faturasına tasarruf olarak yansır.",
     ],
     faults: [
@@ -202,10 +202,6 @@ const DEVICES = [
       },
     ],
     brands: ["Vaillant", "Viessmann", "Bosch", "Buderus", "Demirdöküm", "E.C.A.", "Baymak", "Ariston", "Ferroli", "Alarko", "Protherm", "Airfel", "Termoteknik", "Arçelik", "Beko", "Warmhaus", "İmmergas"],
-    brandNotes: [
-      "E.C.A. kombilerin tamiri ve bakımı yerinde yapılır.",
-      "ECA kombilerde ateşleme, sıcak su ve basınç arızalarına da aynı gün bakılır.",
-    ],
   },
 ];
 
@@ -215,7 +211,7 @@ const DISTRICTS = [
     name: "Çankaya",
     title: "Çankaya Beyaz Eşya ve Klima Servisi | Aynı Gün",
     h1: "Çankaya Beyaz Eşya ve Klima Servisi",
-    lead: "Çankaya’da hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Aynı gün yerinde beyaz eşya ve klima servisi.",
+    lead: "Çankaya’da hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Aynı gün beyaz eşya ve klima servisi.",
     intro: [
       "Çankaya’da buzdolabı, çamaşır ve bulaşık makinesi, kurutma, klima, televizyon, ankastre fırın, ocak ve kombi arızalarına gezici ekiplerimizle aynı gün bakıyoruz. Kayıt telefonla açılır; ekip listedeki semtinize gelir, tespiti yerinde yapar.",
       "Bu ilçede hizmet verdiğimiz semtler aşağıda eksiksiz listelenmiştir.",
@@ -227,7 +223,7 @@ const DISTRICTS = [
     name: "Keçiören",
     title: "Keçiören Beyaz Eşya ve Klima Servisi | Aynı Gün",
     h1: "Keçiören Beyaz Eşya ve Klima Servisi",
-    lead: "Keçiören’de hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Yerinde beyaz eşya ve klima tamiri.",
+    lead: "Keçiören’de hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Beyaz eşya ve klima tamiri.",
     intro: [
       "Keçiören, Ankara Kapında Servis’in aktif gezici hatlarından biridir. Buzdolabı, çamaşır makinesi veya klima arızasında kayıt telefonla alınır; ekip listedeki semtinize yönlendirilir.",
       "Bu ilçede hizmet verdiğimiz semtler aşağıda eksiksiz listelenmiştir.",
@@ -241,7 +237,7 @@ const DISTRICTS = [
     h1: "Yenimahalle Beyaz Eşya ve Klima Servisi",
     lead: "Yenimahalle’de hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Aynı gün mobil teknik servis.",
     intro: [
-      "Yenimahalle’de site ve apartman yoğunluğu yüksektir; cihazı indirmeden yerinde tamir çoğu arızada daha hızlıdır. Kayıt telefonla alınır, ekip listedeki semtinize yönlendirilir.",
+      "Yenimahalle’de site ve apartman yoğunluğu yüksektir. Kayıt telefonla alınır, ekip listedeki semtinize yönlendirilir.",
       "Bu ilçede hizmet verdiğimiz semtler aşağıda eksiksiz listelenmiştir.",
     ],
     neighborhoods: ["Ata Mahallesi", "Batı Sitesi", "Batıkent", "Beştepe", "Çakırlar", "Çamlıca", "Demetevler", "Ergazi", "Gazi Mahallesi", "Güventepe", "İlk Yerleşim", "İnönü", "Kent Koop", "Mehmet Akif Ersoy", "Pamuklar", "Ragıp Tüzün", "Serhat", "Susuz", "Şentepe", "Turgut Özal", "Uğur Mumcu", "Varlık", "Yahyalar", "Yakacık", "Yeşilevler", "Yuvaköy"],
@@ -249,9 +245,9 @@ const DISTRICTS = [
   {
     slug: "mamak-beyaz-esya-servisi",
     name: "Mamak",
-    title: "Mamak Beyaz Eşya ve Klima Servisi | Yerinde Tamir",
+    title: "Mamak Beyaz Eşya ve Klima Servisi | Aynı Gün",
     h1: "Mamak Beyaz Eşya ve Klima Servisi",
-    lead: "Mamak’ta hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Yerinde beyaz eşya ve klima servisi.",
+    lead: "Mamak’ta hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Beyaz eşya ve klima servisi.",
     intro: [
       "Mamak’ta aynı gün gezici servis ile buzdolabı, çamaşır makinesi, bulaşık makinesi, klima, ankastre, ocak ve kombi arızalarına bakıyoruz. Tespit adreste yapılır, fiyat onayınız sonrası işe başlanır.",
       "Bu ilçede hizmet verdiğimiz semtler aşağıda eksiksiz listelenmiştir.",
@@ -261,9 +257,9 @@ const DISTRICTS = [
   {
     slug: "altindag-beyaz-esya-servisi",
     name: "Altındağ",
-    title: "Altındağ Beyaz Eşya ve Klima Servisi | Yerinde Servis",
+    title: "Altındağ Beyaz Eşya ve Klima Servisi | Aynı Gün",
     h1: "Altındağ Beyaz Eşya ve Klima Servisi",
-    lead: "Altındağ’da hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Aynı gün yerinde teknik servis.",
+    lead: "Altındağ’da hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Aynı gün teknik servis.",
     intro: [
       "Altındağ’daki konut ve işyerlerinde beyaz eşya ile klima arızalarına mobil ekiple müdahale ediyoruz. Kayıt telefonla açılır; ekip listedeki semtinize gelir, arızayı yerinde netleştirir.",
       "Bu ilçede hizmet verdiğimiz semtler aşağıda eksiksiz listelenmiştir.",
@@ -275,9 +271,9 @@ const DISTRICTS = [
     name: "Etimesgut",
     title: "Etimesgut Beyaz Eşya ve Klima Servisi | Eryaman, Elvankent",
     h1: "Etimesgut Beyaz Eşya ve Klima Servisi",
-    lead: "Etimesgut’ta hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Yerinde beyaz eşya ve klima tamiri.",
+    lead: "Etimesgut’ta hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Beyaz eşya ve klima tamiri.",
     intro: [
-      "Etimesgut’ta site yaşamı yaygındır; arızalı cihazı taşımak yerine yerinde servis tercih edilir. Aynı gün müsaitlik doğrultusunda ekip listedeki semtinize yönlendirilir.",
+      "Etimesgut’ta site yaşamı yaygındır. Aynı gün müsaitlik doğrultusunda ekip listedeki semtinize yönlendirilir.",
       "Bu ilçede hizmet verdiğimiz semtler aşağıda eksiksiz listelenmiştir.",
     ],
     neighborhoods: ["Ayyıldız", "Bağlıca", "Elvankent", "Eryaman", "Göksu"],
@@ -287,7 +283,7 @@ const DISTRICTS = [
     name: "Pursaklar",
     title: "Pursaklar Beyaz Eşya ve Klima Servisi | Aynı Gün",
     h1: "Pursaklar Beyaz Eşya ve Klima Servisi",
-    lead: "Pursaklar’da hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Yerinde teknik servis.",
+    lead: "Pursaklar’da hizmet verdiğimiz semtlerin tam listesi bu sayfadadır. Teknik servis.",
     intro: [
       "Pursaklar’da beyaz eşya ile klima arızalarına gezici servis veriyoruz. Telefonla kayıt oluşur, ekip listedeki semtinize gelir, fiyat yerinde netleşir.",
       "Bu ilçede hizmet verdiğimiz semtler aşağıda eksiksiz listelenmiştir.",
@@ -299,7 +295,7 @@ const DISTRICTS = [
     name: "Sincan",
     title: "Sincan Beyaz Eşya ve Klima Servisi | İlçe Geneli",
     h1: "Sincan Beyaz Eşya ve Klima Servisi",
-    lead: "Sincan ilçesi genelinde aynı gün yerinde beyaz eşya, klima ve ankastre servisi.",
+    lead: "Sincan ilçesi genelinde aynı gün beyaz eşya, klima ve ankastre servisi.",
     intro: [
       "Sincan ilçesi genelinde gezici ekiplerimizle buzdolabı, çamaşır ve bulaşık makinesi, kurutma, klima, televizyon, ankastre fırın, ocak ve kombi arızalarına bakıyoruz.",
       "Telefonda fiyat verilmez. Yerinde tespit, onayınız ve 1 yıl belgeli garanti ile ilerleriz.",
@@ -311,9 +307,9 @@ const DISTRICTS = [
     name: "Gölbaşı",
     title: "Gölbaşı ve İncek Beyaz Eşya Servisi | Klima Tamiri",
     h1: "Gölbaşı ve İncek Beyaz Eşya Servisi",
-    lead: "Gölbaşı ilçesi ve İncek semtinde yerinde beyaz eşya ve klima teknik servisi.",
+    lead: "Gölbaşı ilçesi ve İncek semtinde beyaz eşya ve klima teknik servisi.",
     intro: [
-      "Gölbaşı ilçesi ve İncek semtinde cihazların yerinde tamiri için aynı gün müsaitlikle ekip çıkarırız.",
+      "Gölbaşı ilçesi ve İncek semtinde cihazların tamiri için aynı gün müsaitlikle ekip çıkarırız.",
       "Klima bakımı ve gaz işlemleri ile beyaz eşya onarımları 1 yıl belgeli garanti kapsamındadır. Kayıt telefon hattımızdan alınır.",
     ],
     neighborhoods: ["Gölbaşı İlçesi", "İncek"],
@@ -377,8 +373,8 @@ const FAQ_HOME = [
     a: "Evet. Tüm işlemler 1 yıl süreyle belgeli garanti altındadır. İşçilik ve değiştirilen yedek parçalar bu kapsamdadır.",
   },
   {
-    q: "Aynı gün yerinde onarım yapıyor musunuz?",
-    a: "Kayıt telefon hattımızdan alınır. Müsaitlik durumuna göre genellikle aynı gün adresinizde yerinde tespit ve onarım yapılır.",
+    q: "Aynı gün servis yapıyor musunuz?",
+    a: "Kayıt telefon hattımızdan alınır. Müsaitlik durumuna göre genellikle aynı gün adresinize gelinir. Tespit yerinde yapılır.",
   },
   {
     q: "Çalışma saatleriniz nedir?",
@@ -408,7 +404,7 @@ function localBusiness() {
     areaServed: DISTRICTS.map((d) => ({ "@type": "AdministrativeArea", name: `${d.name}, Ankara` })),
     priceRange: "$$",
     description:
-      "Ankara’da beyaz eşya ve klima için aynı gün yerinde teknik servis. 1 yıl belgeli garanti. Özel servis; yetkili servis değildir.",
+      "Ankara’da beyaz eşya ve klima için aynı gün teknik servis. 1 yıl belgeli garanti. Özel servis; yetkili servis değildir.",
   };
 }
 
@@ -605,7 +601,7 @@ function layout({
         <div class="footer-content">
             <div class="footer-manager">Merkez yetkilisi: <span>Kartal Sağıt</span></div>
             <div class="footer-regions"><strong>Servis bölgelerimiz:</strong> Keçiören, Altındağ, Pursaklar, Mamak, Yenimahalle, Etimesgut, Çankaya, Sincan ilçesi geneli, Gölbaşı ilçesi ve İncek semti</div>
-            <div class="footer-note">Çalışma saatleri: 7 gün 08:00–22:00. Aynı gün mobil yerinde servis.</div>
+            <div class="footer-note">Çalışma saatleri: 7 gün 08:00–22:00. Aynı gün mobil servis.</div>
             <div>Telefon: <a href="tel:${PHONE_TEL}" class="footer-phone">${PHONE_DISPLAY}</a></div>
             <div class="footer-links">
                 <a href="${homeHref}">Ana sayfa</a>
@@ -666,7 +662,7 @@ function homepage() {
             <span class="hero-subtitle-main">Profesyonel</span>
             <span class="hero-subtitle-sub">Beyaz eşya ve klima servisi</span>
         </div>
-        <p class="hero-subtitle-desc">Ankara’nın 9 ilçesinde, gezici ekiplerimizle aynı gün yerinde tamir. Tüm işlemler 1 yıl belgeli garantilidir.</p>
+        <p class="hero-subtitle-desc">Ankara’nın 9 ilçesinde, gezici ekiplerimizle aynı gün tamir. Tüm işlemler 1 yıl belgeli garantilidir.</p>
         <p class="hero-meta">Çalışma saatleri: 7 gün 08:00–22:00</p>
         <a href="tel:${PHONE_TEL}" class="btn-pulse">
             <span class="btn-phone">${PHONE_DISPLAY}</span>
@@ -677,7 +673,7 @@ function homepage() {
         ${noticeBlock()}
         ${processBlock()}
         <div class="seo-intro-card">
-            <p><strong>Ankara Kapında Servis;</strong> buzdolabı, çamaşır makinesi, bulaşık makinesi, kurutma makinesi, klima, televizyon, ankastre fırın, ocak ve kombi için Keçiören, Altındağ, Pursaklar, Mamak, Yenimahalle, Etimesgut, Çankaya, Sincan ilçesi geneli ile Gölbaşı ilçesi ve İncek semtinde aynı gün yerinde tamir ve bakım sağlar.</p>
+            <p><strong>Ankara Kapında Servis;</strong> buzdolabı, çamaşır makinesi, bulaşık makinesi, kurutma makinesi, klima, televizyon, ankastre fırın, ocak ve kombi için Keçiören, Altındağ, Pursaklar, Mamak, Yenimahalle, Etimesgut, Çankaya, Sincan ilçesi geneli ile Gölbaşı ilçesi ve İncek semtinde aynı gün tamir ve bakım sağlar.</p>
         </div>
         <div class="features-grid">
             <div class="feature-box">
@@ -697,7 +693,7 @@ function homepage() {
             <div class="feature-box">
                 <div class="feature-icon feature-icon-home" aria-hidden="true"></div>
                 <div class="feature-text">
-                    <h3>Yerinde onarım</h3>
+                    <h3>Önce onay</h3>
                     <p>Onayınız olmadan işlem yok</p>
                 </div>
             </div>
@@ -738,7 +734,7 @@ function homepage() {
   return layout({
     title: "Ankara Kapında Servis | Beyaz Eşya ve Klima Teknik Servisi",
     description:
-      "Ankara’da aynı gün yerinde beyaz eşya ve klima servisi. 9 ilçe, 1 yıl belgeli garanti. 7 gün 08:00–22:00. Hemen ara: 0540 008 12 28.",
+      "Ankara’da aynı gün beyaz eşya ve klima servisi. 9 ilçe, 1 yıl belgeli garanti. 7 gün 08:00–22:00. Hemen ara: 0540 008 12 28.",
     path: "/",
     assetPrefix: "",
     current: "home",
@@ -754,9 +750,11 @@ function devicePage(device) {
       q: device.maintenance
         ? `Ankara’da ${device.name.toLowerCase()} tamiri ve bakımı aynı gün yapılır mı?`
         : `Ankara’da ${device.name.toLowerCase()} tamiri aynı gün yapılır mı?`,
-      a: device.maintenance
-        ? "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit, onarım ve bakım yapılır. Kayıt telefon hattımızdan açılır."
-        : "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit ve onarım yapılır. Kayıt telefon hattımızdan açılır.",
+      a: device.slug === "buzdolabi-servisi"
+        ? "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit ve onarım yapılır. Kayıt telefon hattımızdan açılır."
+        : device.maintenance
+          ? "Müsaitlik durumuna göre genellikle aynı gün tespit, onarım ve bakım yapılır. Kayıt telefon hattımızdan açılır."
+          : "Müsaitlik durumuna göre genellikle aynı gün tespit ve onarım yapılır. Kayıt telefon hattımızdan açılır.",
     },
     {
       q: "Garanti süresi nedir?",
@@ -837,7 +835,7 @@ function districtPage(district) {
   const faqs = [
     {
       q: `${district.name} bölgesine aynı gün geliyor musunuz?`,
-      a: "Evet, müsaitlik durumuna göre aynı gün yerinde servis hedeflenir. Kayıt telefonla alınır.",
+      a: "Evet, müsaitlik durumuna göre aynı gün servis hedeflenir. Kayıt telefonla alınır.",
     },
     {
       q: "Hangi cihazlara bakıyorsunuz?",
@@ -916,24 +914,33 @@ function comboPage(district, device) {
   const place = comboPlaceTitle(district);
   const locative = inDistrict(district);
   const deviceLower = device.name.toLowerCase();
+  const onSite = device.slug === "buzdolabi-servisi";
   const title = device.maintenance
     ? `${place} ${device.name} Servisi | Tamir, Bakım ve Petek Temizleme`
-    : `${place} ${device.name} Servisi | Yerinde Tamir`;
+    : onSite
+      ? `${place} ${device.name} Servisi | Yerinde Tamir`
+      : `${place} ${device.name} Servisi | Tamir`;
   const h1 = `${place} ${device.name} Servisi`;
   const lead = device.maintenance
-    ? `${locative} ${deviceLower} tamiri, kombi bakımı ve petek temizleme. Aynı gün yerinde servis. Tüm işlemler 1 yıl belgeli garantilidir.`
-    : `${locative} ${deviceLower} tamiri. Aynı gün yerinde servis. Tüm işlemler 1 yıl belgeli garantilidir.`;
+    ? `${locative} ${deviceLower} tamiri, kombi bakımı ve petek temizleme. Aynı gün servis. Tüm işlemler 1 yıl belgeli garantilidir.`
+    : onSite
+      ? `${locative} ${deviceLower} tamiri. Aynı gün yerinde servis. Tüm işlemler 1 yıl belgeli garantilidir.`
+      : `${locative} ${deviceLower} tamiri. Aynı gün servis. Tüm işlemler 1 yıl belgeli garantilidir.`;
   const description = device.maintenance
-    ? `${locative} kombi bakımı ve petek temizleme yerinde yapılır. Isınma performansı düzelir, doğalgaz faturasına tasarruf olarak yansır. 1 yıl belgeli garanti. 0540 008 12 28.`
-    : `${locative} ${deviceLower} arızasına aynı gün yerinde tamir. 1 yıl belgeli garanti. 0540 008 12 28.`;
+    ? `${locative} kombi bakımı ve petek temizleme yapılır. Isınma performansı düzelir, doğalgaz faturasına tasarruf olarak yansır. 1 yıl belgeli garanti. 0540 008 12 28.`
+    : onSite
+      ? `${locative} ${deviceLower} arızasına aynı gün yerinde tamir. 1 yıl belgeli garanti. 0540 008 12 28.`
+      : `${locative} ${deviceLower} arızasına aynı gün bakılır. 1 yıl belgeli garanti. 0540 008 12 28.`;
   const faqs = [
     {
       q: device.maintenance
         ? `${locative} ${deviceLower} tamiri ve bakımı aynı gün yapılır mı?`
         : `${locative} ${deviceLower} tamiri aynı gün yapılır mı?`,
-      a: device.maintenance
-        ? "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit, onarım ve bakım yapılır. Kayıt telefon hattımızdan açılır."
-        : "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit ve onarım yapılır. Kayıt telefon hattımızdan açılır.",
+      a: device.slug === "buzdolabi-servisi"
+        ? "Müsaitlik durumuna göre genellikle aynı gün yerinde tespit ve onarım yapılır. Kayıt telefon hattımızdan açılır."
+        : device.maintenance
+          ? "Müsaitlik durumuna göre genellikle aynı gün tespit, onarım ve bakım yapılır. Kayıt telefon hattımızdan açılır."
+          : "Müsaitlik durumuna göre genellikle aynı gün tespit ve onarım yapılır. Kayıt telefon hattımızdan açılır.",
     },
     {
       q: "Garanti süresi nedir?",
@@ -954,7 +961,7 @@ function comboPage(district, device) {
         ${noticeBlock()}
         ${processBlock()}
         <article class="prose-card">
-            <p>${locative} ${deviceLower} ${device.maintenance ? "arıza ve bakım işlerinde" : "arızalarında"} Ankara Kapında Servis gezici ekiple yerinde tespit ve onarım yapar. Kayıt telefonla alınır; ekip ${whereWeCome(district)} gelir.</p>
+            <p>${locative} ${deviceLower} ${device.maintenance ? "arıza ve bakım işlerinde" : "arızalarında"} Ankara Kapında Servis gezici ekiple ${onSite ? "yerinde tespit ve onarım yapar" : "tespit yapar"}. Kayıt telefonla alınır; ekip ${whereWeCome(district)} gelir.</p>
             ${(device.intro.slice(1).length ? device.intro.slice(1) : ["Onayınız alınmadan işlem başlamaz. Tamamlanan işçilik ve değişen parçalar 1 yıl belgeli garanti altındadır."]).map((p) => `<p>${p}</p>`).join("\n            ")}
             <p>Sık görülen arızalar:</p>
             <ul>${device.faults.map((f) => `<li>${f}</li>`).join("")}</ul>
@@ -1020,7 +1027,7 @@ function hubCihazlar() {
   const body = `<main id="icerik" class="container">
         ${noticeBlock()}
         <article class="prose-card">
-            <p>Ankara Kapında Servis, aşağıdaki cihaz gruplarında yerinde tamir ve bakım yapar. Her cihazın marka listesi bu sayfada eksiksiz yer alır. Kayıt için sayfadaki numarayı aramanız yeterlidir.</p>
+            <p>Ankara Kapında Servis, aşağıdaki cihaz gruplarında tamir ve bakım yapar. Her cihazın marka listesi bu sayfada eksiksiz yer alır. Kayıt için sayfadaki numarayı aramanız yeterlidir.</p>
         </article>
         <div class="link-grid">${links}</div>
         <section class="section-card">
@@ -1038,7 +1045,7 @@ function hubCihazlar() {
     </main>`;
   return layout({
     title: "Ankara Cihaz Servisleri | Beyaz Eşya, Klima ve TV",
-    description: "Buzdolabı, çamaşır, bulaşık, kurutma, klima, televizyon, ankastre fırın, ocak ve kombi için Ankara yerinde servis. 1 yıl belgeli garanti.",
+    description: "Buzdolabı, çamaşır, bulaşık, kurutma, klima, televizyon, ankastre fırın, ocak ve kombi için Ankara servisi. 1 yıl belgeli garanti.",
     path: "/cihazlar/",
     assetPrefix: "../",
     current: "cihazlar",
@@ -1051,7 +1058,7 @@ function hubCihazlar() {
     ],
     body,
     h1: "Cihaz servisleri",
-    lead: "Yerinde tamir ettiğimiz cihaz grupları ve marka listeleri.",
+    lead: "Tamir ettiğimiz cihaz grupları ve marka listeleri.",
     crumbs: [
       { name: "Ana sayfa", href: "../" },
       { name: "Cihazlar", href: "./" },
@@ -1084,8 +1091,8 @@ function hubBolgeler() {
         </section>
     </main>`;
   return layout({
-    title: "Ankara Servis Bölgeleri | 9 İlçeye Yerinde Hizmet",
-    description: "Çankaya, Keçiören, Yenimahalle, Mamak, Altındağ, Etimesgut, Pursaklar, Sincan ve Gölbaşı’nda aynı gün yerinde servis.",
+    title: "Ankara Servis Bölgeleri | 9 İlçe",
+    description: "Çankaya, Keçiören, Yenimahalle, Mamak, Altındağ, Etimesgut, Pursaklar, Sincan ve Gölbaşı’nda aynı gün servis.",
     path: "/bolgeler/",
     assetPrefix: "../",
     current: "bolgeler",
@@ -1133,7 +1140,7 @@ function iletisimPage() {
     </main>`;
   return layout({
     title: "İletişim | Ankara Kapında Servis",
-    description: "Ankara Kapında Servis iletişim: 0540 008 12 28. 7 gün 08:00–22:00. Aynı gün yerinde servis kaydı.",
+    description: "Ankara Kapında Servis iletişim: 0540 008 12 28. 7 gün 08:00–22:00. Aynı gün servis kaydı.",
     path: "/iletisim/",
     assetPrefix: "../",
     current: "iletisim",
